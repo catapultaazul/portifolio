@@ -1,15 +1,7 @@
-import {
-  Flex,
-  HStack,
-  Text,
-  useColorMode,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Flex, HStack, Text, useColorModeValue } from "@chakra-ui/react";
 import DarkModeToggle from "./DarkModeToggle";
 
 const Header = () => {
-  const { toggleColorMode } = useColorMode();
-
   const title = useColorModeValue("#810181", "purple.400");
 
   return (

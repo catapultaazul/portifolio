@@ -6,7 +6,6 @@ import {
   Stack,
   Grid,
   Icon,
-  useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaReact, FaHtml5 } from "react-icons/fa";
@@ -32,9 +31,6 @@ const Knowledge = () => {
     { name: "Sass", icon: SiSass },
     { name: "Chakra-UI", icon: SiChakraui },
   ];
-
-  const { toggleColorMode } = useColorMode();
-
   const color = useColorModeValue("#810181", "purple.400");
 
   return (

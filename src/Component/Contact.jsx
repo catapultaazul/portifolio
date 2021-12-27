@@ -7,15 +7,12 @@ import {
   Icon,
   Text,
   Stack,
-  useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaWhatsapp, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const Contact = () => {
-  const { toggleColorMode } = useColorMode();
-
   const color = useColorModeValue("#810181", "purple.400");
 
   return (

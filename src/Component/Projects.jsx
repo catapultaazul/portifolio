@@ -8,13 +8,10 @@ import {
   Image,
   LinkBox,
   LinkOverlay,
-  useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 
 const Projects = () => {
-  const { toggleColorMode } = useColorMode();
-
   const color = useColorModeValue("#810181", "purple.400");
 
   const apps = [

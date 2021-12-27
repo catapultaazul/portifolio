@@ -7,14 +7,11 @@ import {
   Link,
   Stack,
   Grid,
-  useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FiGithub } from "react-icons/fi";
 
 const About = () => {
-  const { toggleColorMode } = useColorMode();
-
   const color = useColorModeValue("#810181", "purple.400");
   return (
     <Grid
