@@ -1,13 +1,15 @@
-import { ChakraProvider } from "@chakra-ui/react";
 import Home from "./Home";
+
+import "@fontsource/raleway/400.css";
+import "@fontsource/open-sans/700.css";
 
 const App = () => {
   return (
-    <ChakraProvider>
+    <>
       <div className="App">
         <Home scrollBehavior="smooth" />
       </div>
-    </ChakraProvider>
+    </>
   );
 };
 

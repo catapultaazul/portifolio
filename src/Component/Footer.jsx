@@ -20,14 +20,24 @@ const Footer = () => {
       <HStack justify="space-between">
         <Stack gap="1rem">
           <HStack>
-            <Text fontSize="3xl" fontWeight={"bold"} color="black">
+            <Text
+              fontSize={["xl", "2xl", "3xl"]}
+              fontWeight={"bold"}
+              color="black"
+            >
               Lucas
             </Text>
-            <Text fontSize="3xl" color={"white"} fontWeight={"bold"}>
+            <Text
+              fontSize={["xl", "2xl", "3xl"]}
+              color={"white"}
+              fontWeight={"bold"}
+            >
               Moreira
             </Text>
           </HStack>
-          <Text color="white">Desenvolvido por Lucas Moreira.</Text>
+          <Text color="white" fontSize={["l", "xl", "2xl"]}>
+            Desenvolvido por Lucas Moreira.
+          </Text>
         </Stack>
         <HStack>
           <LinkBox
@@ -37,7 +47,12 @@ const Footer = () => {
             }}
           >
             <LinkOverlay href="https://github.com/catapultaazul">
-              <Icon as={FiGithub} color="white" fontSize="2rem" mr="2rem" />
+              <Icon
+                as={FiGithub}
+                color="white"
+                fontSize={["1rem", "1.5rem", "2rem"]}
+                mr={["1rem", "1.5rem", "2rem"]}
+              />
             </LinkOverlay>
           </LinkBox>
           <LinkBox
@@ -47,7 +62,11 @@ const Footer = () => {
             }}
           >
             <LinkOverlay href="mailto:lucasguilherme.31@outlook.com">
-              <Icon as={FiMail} color="white" fontSize="2rem" />
+              <Icon
+                as={FiMail}
+                color="white"
+                fontSize={["1rem", "1.5rem", "2rem"]}
+              />
             </LinkOverlay>
           </LinkBox>
         </HStack>

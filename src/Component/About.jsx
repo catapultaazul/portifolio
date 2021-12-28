@@ -15,6 +15,8 @@ const About = () => {
   const color = useColorModeValue("#810181", "purple.400");
   return (
     <Grid
+      position="relative"
+      zIndex="-1"
       justifyContent="center"
       borderBottom="1px solid #e4e4e4"
       px={["2rem", "2.5rem", "6rem", "8rem"]}

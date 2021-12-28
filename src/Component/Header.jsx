@@ -1,4 +1,4 @@
-import { Flex, HStack, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, HStack, Text, useColorModeValue } from "@chakra-ui/react";
 import DarkModeToggle from "./DarkModeToggle";
 
 const Header = () => {
@@ -6,14 +6,19 @@ const Header = () => {
 
   return (
     <>
-      <Flex
-        align="center"
+      <Box
+        display="flex"
+        bg="white"
+        alignItems="center"
         justifyContent="space-between"
         borderBottom="1px solid #e4e4e4"
         mb="2rem"
         px={["2rem", "2.5rem", "6rem", "8rem"]}
         py={["1.5rem", "2rem"]}
-        boxShadow="0px 0px 12px rgba(0,0,0,0.15)"
+        boxShadow="0px 0px 12px rgba(0,0,0,0.40)"
+        w="100vw"
+        position="fixed"
+        zIndex="1"
       >
         <HStack>
           <Text fontSize="3xl" fontWeight={"bold"}>
@@ -24,7 +29,7 @@ const Header = () => {
           </Text>
         </HStack>
         <DarkModeToggle />
-      </Flex>
+      </Box>
     </>
   );
 };

@@ -16,7 +16,7 @@ const Projects = () => {
 
   const apps = [
     {
-      name: "letmeask",
+      name: "Letmeask",
       imgURL:
         "https://raw.githubusercontent.com/guilhermecapitao/letmeask/c068f01c136ad259023a7f7a2642a5781791b607/.github/cover.svg",
       description:
@@ -61,6 +61,8 @@ const Projects = () => {
       px={["2rem", "2.5rem", "6rem", "8rem"]}
       borderBottom="1px solid #e4e4e4"
       py={["1.5rem", "2rem"]}
+      position="relative"
+      zIndex="-1"
     >
       <Stack justifyContent="center" display="flex">
         <Heading textAlign="center" color={color}>

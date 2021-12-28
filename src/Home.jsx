@@ -11,13 +11,15 @@ const Home = () => {
   return (
     <Box w="100%" maxWidth="100vw" overflow="hidden">
       <Header />
-      <Fade clear>
-        <About />
-        <Knowledge />
-        <Projects />
-        <Contact />
-        <Footer />
-      </Fade>
+      <Box mt="8rem">
+        <Fade clear>
+          <About />
+          <Knowledge />
+          <Projects />
+          <Contact />
+          <Footer />
+        </Fade>
+      </Box>
     </Box>
   );
 };
