@@ -6,7 +6,6 @@ import {
   HStack,
   Icon,
   Text,
-  Stack,
   Flex,
   Grid,
   useColorModeValue,
